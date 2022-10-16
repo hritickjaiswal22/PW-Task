@@ -18,6 +18,7 @@ function formatBytes(bytes, decimals = 2) {
 
 function render() {
   tbody.innerHTML = "";
+  const fragment = document.createDocumentFragment();
 
   files.forEach((obj, index) => {
     const row = document.createElement("tr");
@@ -41,8 +42,10 @@ function render() {
     ext.appendChild(btn);
     row.appendChild(ext);
 
-    tbody.appendChild(row);
+    fragment.appendChild(row);
   });
+
+  tbody.appendChild(fragment);
 }
 
 function selectHandler(e) {
