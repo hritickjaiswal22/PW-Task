@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Task</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <aside id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+      </div>
+    </aside>
+
+    <article class="container">
+      <input type="file" id="btn" hidden />
+
+      <label for="btn">Choose File</label>
+
+      <main class="tableContainer">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">File Name</th>
+              <th scope="col">File Size</th>
+              <th scope="col">Info</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </main>
+    </article>
+  </body>
+</html>
